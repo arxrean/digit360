@@ -4,6 +4,8 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
+import sys
+sys.path.append("/home/zkou/Code/digit360/digit360/interface")
 import proto as d360frame
 import psutil
 import serial

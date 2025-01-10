@@ -4,6 +4,9 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
+import sys
+sys.path.append("/home/zkou/Code/digit360")
+
 import betterproto
 
 from digit360.interface import proto as d360frame
@@ -11,7 +14,7 @@ from digit360.interface.digit360 import Digit360, TimeDelta
 from digit360.interface.usb.usb import get_digit360_devices
 
 # Example instantiation of Digit360Descriptor takes first device
-descriptor = get_digit360_devices()[0] 
+descriptor = get_digit360_devices()[0]
 
 digit360 = Digit360(descriptor.data)
 
